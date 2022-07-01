@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'postres/index' => 'postres#index' # Ruta de la vista principal de los registrod
+  #get 'postres/index' => 'postres#index' # Ruta de la vista principal de los registrod
+  root 'postres#index'
   #get 'postres/leer'
   get 'postres/leer/:url', to: 'postres#leer' # Ruta de la vista leer o ver los detalles de un registro
   get 'postres/crear' =>  'postres#crear'     # Ruta de la vista para crear un registro
