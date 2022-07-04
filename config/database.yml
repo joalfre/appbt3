@@ -85,6 +85,9 @@ test:
 #
 production:
   <<: *default
-  database: appbt3_production
-  username: appbt3
-  password: <%= ENV['APPBT3_DATABASE_PASSWORD'] %>
+  #database: appbt3_production
+  #username: appbt3
+  #password: <%= ENV['APPBT3_DATABASE_PASSWORD'] %>
+  database: appbt3_development
+  username: appbt
+  password: appbt
